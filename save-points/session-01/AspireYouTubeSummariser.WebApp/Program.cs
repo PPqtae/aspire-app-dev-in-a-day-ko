@@ -9,6 +9,9 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddHttpClient<IApiAppClient, ApiAppClient>(p => p.BaseAddress = new Uri("http://localhost:5050"));
 
+
+builder.Services.AddHttpClient<IApiAppClient, ApiAppClient>(p => p.BaseAddress = new Uri("http://localhost:5050"));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
